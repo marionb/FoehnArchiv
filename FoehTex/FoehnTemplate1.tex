@@ -1,0 +1,192 @@
+\documentclass[pdftex,14.00pt,a4paper,twoside]{scrartcl}
+%headspline    scrreprt
+%\usepackage{pdfpages}
+%    \includepdf[pages=1-6]{MEIN_PDF.pdf}
+\usepackage{multirow}
+\usepackage[pdftex]{graphicx}
+\DeclareGraphicsRule{.JPG}{eps}{*}{`jpeg2ps #1} 
+\usepackage[german]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{color}
+%\sffamily
+\usepackage{verbatim}
+%\usepackage{caption}
+%	\fontencoding{T1}
+%  \fontfamily{ttfamily}
+%  \fontseries{m}
+%  \fontshape{it}
+%  \fontsize{12}{15}
+%Define Fonte to be used in the Document
+%\usefont {OT1} {cmss} {m} {n}
+\selectfont
+
+%\usepackage[top=0cm, bottom=2.5cm, left=0cm, right=1cm]{geometry}
+
+%Not Indent
+\setlength{\parindent}{0pt}
+%\setlength{\parskip}{1ex}
+
+%graphics
+\usepackage{float}
+\usepackage{subfigure}
+%[H]
+\usepackage{stfloats} 
+
+%Referenzen und links%
+\usepackage{hyperref}
+\usepackage[all]{hypcap}
+
+%Define Captions for figures
+\usepackage{caption}
+\captionsetup[figure]{name=Referenz}
+
+%Defining header and footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{} % clear all header fields
+\fancyhead[RO,RE]{\includegraphics[width=0.1\textwidth]{Bilder/jo-alter.jpg}}
+\fancyhead[CO,CE]{\rightmark}
+\fancyhead[LO,LE]{\includegraphics[width=0.1\textwidth]{Bilder/kibe-alter.jpg}}
+
+\fancyfoot{} % clear all footer fields
+\fancyfoot[RE,LO]{\thepage}
+\fancyfoot[LE,RO]{\href{http://www.jugend-pilatus.ch}{www.jugend-pilatus.ch}}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+
+\textheight=680pt
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{plain}
+
+\input{titel.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\cleardoublepage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\mark{_News}
+\label{Roller}
+\vfill
+\begin{center}
+\includegraphics[viewport=28pt 28pt 449pt 623pt, clip]{News/Kletterhalle.pdf}
+\end{center}
+\vfill
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sffamily
+\mark{_Monatsprogramm}
+\label{Monatsprogramm}
+\begin{center}
+%	\textsc{
+\LARGE \textbf{Monatsprogramm}
+\end{center}
+	\Large
+	
+	
+\begin{table}[H]
+\sffamily
+\centering
+\begin{tabular}{|l|p{8cm}||p{4cm}|} \hline
+&&\\
+\textbf{Wann}&\textbf{Was}&\textbf{Seite}\\[1cm] \hline \hline
+
+01.-05. Okt		&Kletterlager im Tessin				&\pageref{LiviaLager}	\\[0.6cm]			
+07. Okt			&Kristallsuche im Herzen der Schweiz		&\pageref{Kristall}\\[0.6cm]\hline
+			&Hallen Klettern				& \pageref{Kletterhalle} \\[0.6cm]
+			&FaBe Klettern					&\pageref{FaBe}\\[0.6cm]
+&&\\
+%			&Tourenberichte					&\pageref{Berichte}	\\[0.6cm] \hline
+			&Impressum					& \pageref{Impressum}	\\[0.6cm] \hline
+\end{tabular}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\mark{_News}
+\vfill
+\begin{center}
+\includegraphics[viewport=40pt 20pt 550pt 820pt, clip, width=0.8\textwidth]{News/TShirt.pdf}%
+\end{center}
+\vfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\label{LiviaLager}
+\vfill
+\begin{center}
+\includegraphics[viewport=27pt 40pt 600pt 840pt,clip, scale = 0.8]{Ausschreibungen06/LiviaAusschreibung1.pdf}
+\end{center}
+\vfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\vfill
+\begin{center}
+\includegraphics[viewport=27pt 40pt 600pt 840pt,clip, scale = 0.8]{Ausschreibungen06/LiviaAusschreibung2.pdf}
+\end{center}
+\vfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\label{Kristall}
+\newpage
+\vfill
+\begin{center}
+\includegraphics[viewport=27pt 40pt 600pt 840pt,clip, scale = 0.8]{Ausschreibungen07/Kristall.pdf}
+\end{center}
+\vfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\label{Kletterhalle}
+\vfill
+\begin{center}
+\includegraphics[viewport=27pt 40pt 600pt 840pt,clip, scale = 0.8]{Kurse/KurseOkt1.pdf}
+\end{center}
+\vfill
+
+
+\vfill
+\begin{center}
+\includegraphics[viewport=27pt 40pt 600pt 840pt,clip, scale = 0.8]{Kurse/KurseOkt2.pdf}
+\end{center}
+\vfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\label{FaBe}
+\vfill
+\begin{center}
+\includegraphics[viewport=27pt 40pt 600pt 840pt,clip, scale = 0.8]{Ausschreibungen08/Hallenklettern2013FaBe.pdf}
+\end{center}
+\vfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\mark{_Diverses}
+
+\section*{R\"atsel Lösung von Letzer Ausgabe:}
+Das ursprüngliche Bild sieht so aus:
+
+\begin{center}
+\includegraphics[scale=0.1]{Bilder/MtProsa.jpg}%width=\textwidth
+%\caption{koä}
+\end{center}
+Es zeigt die Aussicht vom Monte Prosa (IT) im Gotthard Gebiet.
+
+
+
+\noindent\rule{\textwidth}{1pt}
+\begin{figure}[h]
+\begin{center}
+  \includegraphics[scale=0.3]{Bilder/Apokalypse.jpg}
+  \vspace{-40pt}
+  \caption[Referenz]{\href{http://klettercomics.de/index.php/category/comics/}{http://klettercomics.de/index.php/category/comics/}}
+  \vspace{-50pt}
+\end{center}
+\end{figure} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{Impressum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
